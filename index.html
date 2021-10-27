@@ -24,17 +24,33 @@
             font-size: 30px; 
             padding: 10px 20px;
         }
-
+        .azul {
+            color: blue;
+        }  
+        .rojo {
+            color: red;
+        } 
+        .fondoVerde {
+            background-color:rgba(0,255,0,0.5);
+        }
         /*SELECTOR DE ID*/
         #software{
             color:red;
         }
-        
+        #body {
+            margin: 0;
+            padding-left: 20%;
+            padding-right: 20%;
+            background-color: aliceblue;
+        }
+        b {
+            color: green;
+        }
+
     </style>
 </head>
-
-<!-- <body style="margin: 0; padding-left: 20%; padding-right: 20%; background-image: url('./img/house.jpg'); background-size: contain; background-attachment: fixed; background-position: center;">-->
-<body style="margin: 0; padding-left: 20%; padding-right: 20%; background-color: aliceblue;">
+<!-- <body >-->
+<body id="body">
 
     <p><b>¿Qué es Git?</b></p>
     <!--Estilos en linea:
@@ -48,14 +64,14 @@
     <p>Además, los requerimientos en este tipo de proyectos cambian constantemente. ASí que un sistema de control de versiones permite a los desarrolladores revertir y regresar a una versión anterior de su código.</p>
     <p>El sistema de ramas en Git permite a los desarrolladores trabajar individualmente en una tarea.</p>
     <p>Por ejemplo:</p>
-    <ul style="background-color:rgba(0,255,0,0.5);">
+    <ul class="fondoVerde">
         <li>
             <!--amarillo-->
-            <p style="color: blue;">una rama -> una tarea</p>
+            <p class="azul">una rama -> una tarea</p>
         </li>
         <li>
             <!--rojo-->
-            <p style="color: red;">una rama -> un desarrollador</p>
+            <p class="rojo">una rama -> un desarrollador</p>
         </li>
     </ul>
 
